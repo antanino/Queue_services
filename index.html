@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&#11044; MOAB</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/83efd2c5c1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAV BAR -->
+
+    <nav>
+      <div class="topnav">
+        <a href="#" class="item logo"
+          ><img src="MOAB.png" alt="Moab_logo" width="150px"
+        /></a>
+        <a href="#features" class="item">Features</a>
+        <a href="#how-it-works" class="item">How It Works</a>
+        <a href="#pricing" class="item">Pricing</a>
+        <a href="sign-in.html" class="item">Sign in</a>
+        <div class="nav-btn">
+          <button class="btn">
+            <a href="sign-up.html" target="_blank" class="btn-sign-up">Create account</a>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="background">
+        <section class="header">
+          <h1 class="heading">
+            Build simple, secure, scalable systems with MOAB
+            <span
+              ><a class="heading-by" href="#" target="_blank">
+                by Everblack &copy;</a
+              ></span
+            >
+          </h1>
+
+          <button class="btn">
+            <a href="sign-up.html" target="_blank" class="btn-sign-up">Get started for free</a>
+          </button>
+        </section>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+
+    <main>
+      <section id="features" class="container">
+        <section class="all-features">
+          <div class="feature">
+            <i class="fa-solid fa-download"></i>
+            <div>
+              <h3 class="description">Pull-based model</h3>
+              <p>
+                Workers periodically pull (dequeue) tasks from queues, allowing
+                simple scaling of the workers fleet. Workers are stateless. No
+                poison pills ever. You can monitor queue size and the age of the
+                oldest task in real time.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-rotate-right"></i>
+            <div>
+              <h3 class="description">Automatic retries</h3>
+              <p>
+                Failed tasks are automatically retried. Even in the event of
+                worker crash. Retry strategy can be configured for a queue or
+                for each individual task. That guarantees at-least-one
+                execution.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <i class="fa-regular fa-calendar-days"></i>
+            <div>
+              <h3 class="description">Scheduled Tasks</h3>
+              <p>
+                Moab allows you to schedule the time when a task will be
+                executed.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-hourglass-start"></i>
+            <div>
+              <h3 class="description">Tasks Expiration</h3>
+              <p>
+                Tasks that are set to expire can run as long as they want, but
+                an expiring task must be picked up before the expiration time.
+                Expiration time can be set on each task individually.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-fingerprint"></i>
+            <div>
+              <h3 class="description">Unique Tasks</h3>
+              <p>
+                Moab makes sure there is only a single copy of a task with a
+                given key in the queue. You can choose to leave the original
+                task or rewrite it (if payload or scheduled time is different).
+              </p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <i class="fa-regular fa-clock"></i>
+            <div>
+              <h3 class="description">Long Running Tasks</h3>
+              <p>
+                Tasks can run for hours or days as long as workers keep
+                reporting them in-progress.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <i class="fa-regular fa-calendar-check"></i>
+            <div>
+              <h3 class="description">Built-in Cron</h3>
+              <p>Schedule periodic tasks with built-in Cron.</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+              <h3 class="description">Security</h3>
+              <p>
+                Payload can be end-to-end encrypted. IAM roles allow granular
+                control to queues and operations. Each API request is signed.
+                API keys can be revoked.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-gauge-high"></i>
+            <div>
+              <h3 class="description">Rate Limiter</h3>
+              <p>
+                Moab has a built-in rate limiter that works across all workers.
+                Rate limiter is implemented with Token Bucket algorithm.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-hand"></i>
+            <div>
+              <h3 class="description">Concurrency Limiter</h3>
+              <p>
+                Regardless of how many workers are pulling tasks from a queue
+                Moab can also limit the number of inflight tasks.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <i class="fa-regular fa-circle-pause"></i>
+            <div>
+              <h3 class="description">Pause Queue</h3>
+              <p>
+                You can pause enqueuing to or dequeuing from a queue with a
+                single command. For example, in an emergency scenario.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- HOW IT WORKS? -->
+
+      <section id="how-it-works">
+        <div class="wrapper">
+          <div class="wrapper-description">
+            <h2>How It Works</h2>
+            <p>
+              Moab Queue Service (MQS) lets you send, store, and receive
+              messages between software components at any volume, without losing
+              messages or requiring other services to be available.
+            </p>
+          </div>
+          <div class="image_queue">
+            <img
+              src="Message_queue_architecture.jpeg"
+              alt="Message Queue Service scheme"
+            />
+            <iframe
+              height="315"
+              src="https://www.youtube.com/embed/xErwDaOc-Gs?si=zvdNRJFPwC1OTRcz"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrapper-2">
+          <div class="wrapper-description">
+            <fieldset>
+              <legend>
+                <h2>API and Clients</h2>
+              </legend>
+
+              <div class="description-list">
+                <ul>
+                  <li class="grow">
+                    <a href="default.asp"
+                      ><img src="go-svgrepo-com.svg" alt="Go logo" width="60px"
+                    /></a>
+                  </li>
+                  <li class="grow">
+                    <a href="default.asp"
+                      ><img
+                        src="java-logo-svgrepo-com.svg"
+                        alt="Go logo"
+                        width="60px"
+                    /></a>
+                  </li>
+                  <li class="grow">
+                    <a href="default.asp"
+                      ><img
+                        src="ruby-svgrepo-com.svg"
+                        alt="Go logo"
+                        width="60px"
+                    /></a>
+                  </li>
+                  <li class="grow">
+                    <a href="default.asp"
+                      ><img src="js-svgrepo-com.svg" alt="Go logo" width="60px"
+                    /></a>
+                  </li>
+                  <li class="grow">
+                    <a href="default.asp"
+                      ><img
+                        src="python-svgrepo-com.svg"
+                        alt="Go logo"
+                        width="60px"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+
+              <p>
+                If your language is not supported yet, we have a clean and
+                simple API (gRPC or JSON) to integrate with.
+              </p>
+            </fieldset>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing">
+        <div class="wrapper-3">
+          <div class="wrapper-description cloud-section">
+            <h2>Moab Cloud</h2>
+          </div>
+
+          <div class="all-features">
+            <div class="feature-2">
+              <h3>Serverless and fully managed</h3>
+              <p>
+                Define as many queues as you want, scale your workers fleet,
+                enqueue and enjoy. We will take care of the rest.
+              </p>
+              <a href="#" target="_blank"> Learn more <span>&#8594;</span> </a>
+            </div>
+
+            <div class="feature-2">
+              <h3>Simple pricing</h3>
+              <p>Pay only per each enqueued task. First 1M tasks is free.</p>
+              <a href="#" target="_blank"> Learn more &#8594; </a>
+            </div>
+
+            <div class="feature-2">
+              <h3>Web UI</h3>
+              <p>Enjoy simple and fast Web UI.</p>
+              <a href="#" target="_blank"> Learn more &#8594; </a>
+            </div>
+
+            <div class="feature-2">
+              <h3>Available in multiple regions</h3>
+              <p>Choose a region that is geographically closer to you.</p>
+              <ul>
+                <li>US East</li>
+                <li>US West</li>
+                <li>Europe</li>
+                <li>India</li>
+              </ul>
+              <a href="#" target="_blank"> Learn more &#8594; </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="main-footer">
+        <div class="item-footer">
+          <p>&copy; 2023 Everblack</p>
+        </div>
+        <div class="item-footer">
+          <h4><a href="#moab">Moab</a></h4>
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Release Notes</a></li>
+          </ul>
+        </div>
+
+        <div class="item-footer">
+          <h4><a href="#">Bison</a></h4>
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Release Notes</a></li>
+          </ul>
+        </div>
+
+        <div class="item-footer">
+          <h4><a href="#">About</a></h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
